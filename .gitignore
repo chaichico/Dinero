@@ -1,0 +1,15 @@
+node_modules/
+.nuxt/
+.output/
+dist/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.tmp/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store

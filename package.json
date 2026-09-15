@@ -1,0 +1,13 @@
+{
+  "name": "dinero",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "typecheck": "npm --prefix frontend run typecheck && npm --prefix backend/api run typecheck",
+    "api:dev": "npm --prefix backend/api run dev",
+    "db:migrate": "npm --prefix backend/api run db:migrate",
+    "auth:hash": "npm --prefix backend/api run auth:hash --",
+    "auth:setup": "npm --prefix backend/api run auth:setup"
+  }
+}

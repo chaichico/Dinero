@@ -1,0 +1,2 @@
+<script setup lang="ts">const route = useRoute()</script>
+<template><main class="page"><NuxtLink :to="`/splits/${route.params.id}`" class="text-link">← Group</NuxtLink><h1 class="display">Settle up.</h1><p class="muted">Mark payments as they happen. Keep the paper trail simple.</p><div class="card" style="margin-top:28px"><div class="eyebrow">Suggested payment</div><h2 class="section-title" style="margin-top:10px">You pay Anong</h2><div class="balance" style="margin:14px 0">฿640</div><button class="button accent button-block">Mark as settled</button></div></main></template>

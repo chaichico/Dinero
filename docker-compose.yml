@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: dinero
+      POSTGRES_PASSWORD: dinero
+      POSTGRES_DB: dinero
+    ports:
+      - "5432:5432"
+    volumes:
+      - dinero-postgres:/var/lib/postgresql/data
+  ocr:
+    build: ./backend/ocr
+    ports:
+      - "8001:8000"
+    environment:
+      MAX_UPLOAD_BYTES: 10000000
+
+volumes:
+  dinero-postgres:
